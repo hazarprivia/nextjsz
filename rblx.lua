@@ -286,7 +286,7 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({
-	Name = "Shift",
+	Name = "Sprint",
 	Callback = function()
       		-- ScreenGui oluştur
 local screenGui = Instance.new("ScreenGui")
@@ -334,6 +334,13 @@ hideButton.MouseButton1Click:Connect(function()
     end
     hidden = not hidden
 end)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Shiftlock",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hazarprivia/privia/main/Shiftlock.txt"))()
   	end    
 })
 
